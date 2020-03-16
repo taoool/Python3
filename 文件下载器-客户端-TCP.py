@@ -32,15 +32,3 @@ with open("C:\\Users\\12817\\Desktop\\"+file_name, "wb") as file:
             break
 # 8，关闭套接字
 tcp_client_socket.close()
-
-
-
-
-
-
-
-
-
-
-
-
