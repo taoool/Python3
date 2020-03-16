@@ -27,7 +27,6 @@ def recv_msg(new_client_socket, ip_port):
     # 9，关闭和当前客户端连接
     new_client_socket.close()
 
-
 # 1，导入模块
 # 2，创建套接字
 tcp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -51,8 +50,5 @@ while True:
     # 启动线程
     t1.start()
 
-
+# 服务器基本不用关闭
 # tcp_server_socket.close()
-
-
-
