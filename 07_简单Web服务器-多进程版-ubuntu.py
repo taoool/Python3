@@ -92,7 +92,7 @@ class WebServer(object):
             # 调用功能函数处理请求并且响应
             # self.request_handler(new_client_socket, ip_port)
 
-            # 创建一个线程
+            # 每当有新客户访问创建一个子线程
             t1 = threading.Thread(target=self.request_handler, args=(new_client_socket, ip_port))
             # 设置线程守护
             t1.setDaemon(True)
